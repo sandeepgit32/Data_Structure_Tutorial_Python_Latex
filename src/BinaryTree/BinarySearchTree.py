@@ -52,21 +52,22 @@ class BinarySearchTree():
     
     
     # Delete node from Binart Search Tree
-    def deleteNode(self, data):
-        currentNode = self.root
-        isLeftChild = True
-        # 'isLeftChild' is used to check whether the current
-        # is whether the left or right child of parents
-        while data != currentNode:
-            parentNode = currentNode
-            if data < currentNode.data:
-                isLeftChild = True
-                currentNode = currentNode.leftChild
-            else:
-                isLeftChild = False
-                currentNode = currentNode.rightChild
-            if currentNode == None:
-                return False # No no found
+    # To-Implement
+    # def deleteNode(self, data):
+    #     currentNode = self.root
+    #     isLeftChild = True
+    #     # 'isLeftChild' is used to check whether the current
+    #     # is whether the left or right child of parents
+    #     while data != currentNode:
+    #         parentNode = currentNode
+    #         if data < currentNode.data:
+    #             isLeftChild = True
+    #             currentNode = currentNode.leftChild
+    #         else:
+    #             isLeftChild = False
+    #             currentNode = currentNode.rightChild
+    #         if currentNode == None:
+    #             return False # No no found
 
     
     # Remove Node from Binary Search Tree 
