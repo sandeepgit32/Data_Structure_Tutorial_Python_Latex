@@ -306,5 +306,28 @@ Removing node with two children...
 Removing Node with single left child...
 \end{lstlisting}
 
-
+\section{Heap}
+Heap data structure is a \textit{complete binary tree} that satisfies the\textit{ heap property}. It is also called as a binary heap. 
+A \textit{complete binary} tree is a special binary tree in which satisfies the following conditions -
+\begin{itemize}
+	\item Each level is completely filled before another level is added.
+	\item The bottom tier is filled in from left to right.
+\end{itemize}
+\textit{Heap Property} is the property of a node which satisfies the following conditions -
+\begin{itemize}
+	\item Max heap: Data(key) of each node is always greater than its child node(s).
+	\item Min heap: Data(key) of each node is always smaller than its child node(s).
+\end{itemize}
+Another interesting property of a complete tree is that we can represent it using a single list. Because the tree is complete, for a node at index $p$ in the parent,
+\begin{itemize}
+	\item Its parent is at $\frac{p-1}{2}$ (integer division).
+	\item Its left child is at $2p+1$.
+	\item Its right child is at $2p+2$.
+\end{itemize}
+\lstinputlisting[language=Python]{src/Heap/Heap.py}
+\textbf{Output:}
+\begin{lstlisting}
+[82, 70, 53, 63, 27, 43, 37, 10, 51]
+[70, 63, 53, 51, 27, 43, 37, 10]
+\end{lstlisting}
 \end{document}
